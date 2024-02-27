@@ -1,0 +1,48 @@
+@tailwind components;
+
+@layer components {
+  .btn-full {
+    @apply w-full rounded-md;
+  }
+
+  .spinner-container {
+    @apply flex items-center justify-center;
+  }
+
+  .backdrop {
+    @apply fixed left-1/2 top-1/2  z-150 h-full w-full max-w-[768px] -translate-x-1/2 -translate-y-1/2 bg-dim-050;
+  }
+  .modal-container {
+    @apply fixed left-1/2 top-1/2 z-170 flex -translate-x-1/2 -translate-y-1/2 items-center justify-center;
+  }
+  .modal {
+    @apply flex w-[328px] min-w-[288px] flex-col items-center justify-center rounded-xl bg-010 px-3 pb-4;
+  }
+  .radio {
+    @apply mr-3 h-[18px] w-[18px] appearance-none  rounded-full transition-all duration-500;
+  }
+  .radio-checked {
+    @apply border-[0.4em] border-solid border-main-050;
+  }
+  .check {
+    @apply mr-2 h-[18px] w-[18px] appearance-none rounded-sm border-[1.5px] border-050 bg-contain focus:outline-none;
+  }
+  .bottom-sheet-container {
+    @apply fixed bottom-[-100%] left-1/2 z-170 flex w-full max-w-[768px] -translate-x-1/2 flex-col rounded-t-[20px] bg-010 pb-3 duration-300;
+  }
+  .bottom-sheet-show {
+    @apply bottom-0;
+  }
+  .bottom-sheet-content {
+    @apply flex flex-col items-center justify-center text-center;
+  }
+  .list-style-desc {
+    @apply flex before:mr-1 before:text-text-070 before:content-['•'];
+  }
+  .list-style-desc-car {
+    @apply flex before:mr-1 before:text-text-090 before:content-['•'];
+  }
+  .section {
+    @apply border-020 bg-010 py-6 [&:not(:last-child)]:border-b-[10px];
+  }
+}

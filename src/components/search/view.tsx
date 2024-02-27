@@ -1,7 +1,6 @@
 import React from 'react'
 
-const About = () => {
-  console.log(process.env.NEXT_PUBLIC_NAVER_CLIENT_ID)
+const Search = () => {
   return (
     <div className="w-full flex flex-col items-center justify-center min-h-screen bg-gray-100">
       <h1 className="text-4xl font-bold text-gray-800">Welcome to 꿀차장</h1>
@@ -9,5 +8,3 @@ const About = () => {
     </div>
   )
 }
-
-export default About
