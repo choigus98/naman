@@ -8,5 +8,5 @@ export const usePlacesViewModel = () => {
     queryFn: fetchPlaces
   })
 
-  return {places : places.data , isLoading : places.isLoading , error : places.error, isSuccess : places.isSuccess}
+  return { places: places.data, isLoading: places.isLoading, error: places.error, isSuccess: places.isSuccess }
 }

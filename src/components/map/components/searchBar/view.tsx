@@ -2,6 +2,7 @@
 
 import React from 'react'
 import Link from 'next/link'
+import { Navbar,Typography,IconButton,Button,Input } from '@material-tailwind/react'
 
 const SearchBar = () => {
   return (

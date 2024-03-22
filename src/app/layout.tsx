@@ -24,9 +24,12 @@ export default function RootLayout({
         <meta name="apple-mobile-web-app-capable" content="yes" />
       </head>
       <body className={inter.className}>
-        <div id="root" className={`flex justify-center`}>
-          <div className="flex w-full max-w-[768px] pt-4 mx-auto p-4 bg-gradient-to-r from-blue-200 via-purple-200 to-pink-100 rounded-lg shadow-lg" style={{ minHeight: '100vh' }}>
-            <div id="layer1" className={`relative z-100 flex flex-1 overflow-hidden`}>
+        <div id="root" className={`flex justify-center `}>
+          <div
+            className=" w-full  max-w-[768px]  rounded-lg bg-gradient-to-r from-blue-200 via-purple-200 to-pink-100 p-4 shadow-lg"
+            style={{ minHeight: '100vh' }}
+          >
+            <div id="layer1" className={`relative z-100 flex flex-1 flex-col overflow-hidden`}>
               <ReactQueryProviders>{children}</ReactQueryProviders>
             </div>
           </div>

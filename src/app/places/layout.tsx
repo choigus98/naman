@@ -1,7 +1,7 @@
-import React, { ReactNode } from "react";
+import React, { ReactNode } from 'react'
 
 const PlacesLayout = ({ children }: { children: ReactNode }) => {
-  return <div className="flex w-full">{children}</div>;
+  return <div className="flex w-full">{children}</div>
 }
 
-export default PlacesLayout;
+export default PlacesLayout
