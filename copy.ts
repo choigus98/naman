@@ -108,5 +108,6 @@ module.exports = {
         '090': theme('colors.gray.090')
       })
     }
-  }
+  },
+  plugins: [require('flowbite/plugin')]
 }

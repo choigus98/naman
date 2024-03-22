@@ -9,15 +9,22 @@ declare global {
 }
 
 const NaverMap = () => {
+  
   const initMap = () => {
     const mapOptions = {
-      center: new window.naver.maps.LatLng(37.3595704, 127.105399),
-      zoom: 10,
+      center: new window.naver.maps.LatLng(37.4767276, 126.97474),
+      scale: 2,
+      zoom: 16,
       zoomControl: true,
-      // 줌 컨트롤의 옵션
       zoomControlOptions: {
-        // 줌 컨트롤의 위치를 우측 상단으로 배치함
+        style: naver.maps.ZoomControlStyle.SMALL,
         position: naver.maps.Position.RIGHT_CENTER
+      },
+      markers: {
+        type: 'd', // 마커 타입 : d(default), n(number), a(alphabet), t(tooltip)
+        size: 'mid', // 마커 사이즈 : tiny, small, mid
+        color: '0x0099ff', // 마커 컬러
+        viewSizeRatio: 0.5 // 마커 크기 비율 : min: 0.1 max: 2.0 (기본 1.0)
       }
     }
 

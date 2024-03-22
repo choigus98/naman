@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
+import ReactQueryProviders from '@/hooks/useReactQuery'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -24,9 +25,9 @@ export default function RootLayout({
       </head>
       <body className={inter.className}>
         <div id="root" className={`flex justify-center`}>
-          <div className={`flex w-full max-w-[768px]`} style={{ minHeight: '100vh' }}>
+          <div className="flex w-full max-w-[768px] pt-4 mx-auto p-4 bg-gradient-to-r from-blue-200 via-purple-200 to-pink-100 rounded-lg shadow-lg" style={{ minHeight: '100vh' }}>
             <div id="layer1" className={`relative z-100 flex flex-1 overflow-hidden`}>
-              {children}
+              <ReactQueryProviders>{children}</ReactQueryProviders>
             </div>
           </div>
         </div>
